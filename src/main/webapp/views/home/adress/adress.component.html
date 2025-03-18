@@ -1,0 +1,10 @@
+<div #map class="relative mt-10">
+    <google-map [options]="options" [width]="map.clientWidth">
+        <map-marker [position]="address" draggable="false" title="Le Pacte Ludique"/>
+    </google-map>
+    <div class="absolute -top-10 right-10 p-8 shadow-2xl border rounded-2xl bg-white dark:shadow-amber-200 dark:bg-slate-700">
+        <p class="font-treasure text-3xl text-center">ADRESSE</p>
+        <p>3 Rue des Serruriers
+            06300 Nice</p>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="h-full w-full  relative">
+    <div class="h-96" id="lpl-bg"></div>
+    <div class="h-full overflow-auto pt-72 z-10 absolute w-full">
+        <div
+                class="bg-slate-200 dark:bg-slate-700 pt-28 text-xl flex flex-col gap-y-14 relative shadow-inner shadow-slate-700 dark:shadow-amber-200">
+            <img alt="lpl-logo" class="h-28 rounded-full shadow absolute top-0 left-1/2 -translate-1/2"
+                 src="/public/img/logo.webp">
+            <div class="w-full flex flex-col text-center gap-y-6 px-28">
+                <h1 class="font-treasure text-5xl">LE PACTE LUDIQUE</h1>
+                <p class="text-3xl">Nous sommes une association à but non lucratif qui a pour but de démocratiser le jeu
+                    de rôle Grandeur
+                    Nature,
+                    de le promouvoir et d'en faciliter l'accès.</p>
+            </div>
+            <div class=" px-28">
+                <div class="h-[600px]">
+                    <app-stepper [interval]="15000">
+                        @for (i of gallery; track i) {
+                            <app-step>
+                                <div class="h-full flex items-center justify-center">
+                                    <div class="border-2 rounded-4xl h-full overflow-hidden">
+                                        <img src="/public/img/gallery/{{i}}.jpg" class="h-full">
+                                    </div>
+                                </div>
+                            </app-step>
+                        }
+                    </app-stepper>
+                </div>
+            </div>
+            <div class="text-center text-4xl px-28">
+                <div class="border shadow-2xl p-12 rounded-4xl bg-white dark:text-black">
+                    <p>"Le Pacte Ludique" aura pour vocation de répondre aux
+                        besoins des pratiquants d’activités ludique et culturelles en mettant en valeur le jeu de rôles
+                        en Grandeur Nature
+                        (GN), sur le territoire Niçois.</p>
+                    <p>Pour cela, nous proposerons aux adhérents, des moyens de qualité afin de participer
+                        aux évènements se rapprochant du GN&nbsp;;&nbsp;</p>
+                    <ul>
+                        <li>En réservant des places aux évènements qui seront ensuite fournies aux membres
+                            avec une possibilité d’échelonnement de paiement.
+                        </li>
+                        <li>En organisant la logistique de groupe pour accéder à ces évènements.</li>
+                    </ul>
+                    <p>Nous leur proposerons régulièrement l’expérimentation du combat par des entraînements
+                        aux armes de GN.</p>
+                    <p>Nous favoriserons la rencontre humaine, sociale, ou culturelle par des rassemblements
+                        en pleine nature le temps d’un weekend.</p>
+                    <p>Nous chercherons à stimuler leur créativité artistique, en leur proposant des
+                        ateliers d’aide à la création d’armes, de costumes &amp; de personnages.</p>
+                </div>
+            </div>
+            <app-adress></app-adress>
+        </div>
+    </div>
+</div>

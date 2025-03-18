@@ -1,0 +1,5 @@
+<div class="w-full h-full flex justify-center overflow-auto map" #bg>
+    <div class="w-[1024px] h-[1024px] bg-carte shadow-2xl relative" (mousedown)="isDown = true" (mouseup)="isDown = false" (mouseleave)="isDown = false" (mousemove)="drag(bg,$event)">
+        <app-location [x]="170" [y]="225" [modalRef]="ref" src="/public/img/ship.png" titre="Titre à rallonge"/>
+    </div>
+</div>

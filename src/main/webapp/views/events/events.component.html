@@ -1,0 +1,12 @@
+<div class="h-full overflow-y-auto py-10 flex flex-col gap-y-10 items-center bg-table bg-cover dark:text-black">
+    @for (message of messages |async; track $index) {
+        <div class="w-full shadow-2xl rounded-3xl p-5 bg-parch lg:px-12 xl:px-[20%]">
+            <p class="text-center text-3xl">{{ message.created | date }}</p>
+            <div class="w-full overflow-x-hidden h-48 flex flex-nowrap justify-center gap-x-3 py-4 shadow-inner">
+                @for (img of message.images.slice(0, 5); track $index) {
+                    <app-event-image [img]="img"></app-event-image>
+                }
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Treasure';
+    src: url('/public/font/Treasure.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rosemary';
+    src: url('/public/font/Rosemary.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Piece';
+    src: url('/public/font/Pieces of Eight (1).ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-piece {
+    font-family: Piece, cursive;
+}
+
+.font-treasure {
+    font-family: Treasure, cursive;
+}
+
+.font-rosemary {
+    font-family: Rosemary, cursive;
+}
+
+.bg-table {
+    background-image: url("/public/img/816w4qbWQfL.jpg");
+}
+
+.bg-old-map {
+    background-image: url("/public/img/oldmap.webp");
+}
+
+.bg-map {
+    background-image: url("/public/img/map.jpg");
+}
+
+.bg-parch {
+    background-image: url("/public/img/old-paper.webp");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact {
+    width: 960px;
+    height: 739px;
+    background-image: url("/public/img/paper.jpg");
+    padding: 100px;
+}

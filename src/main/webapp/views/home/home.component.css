@@ -1,0 +1,14 @@
+#description {
+    background-image: url("/public/img/paper.jpg");
+    background-size: 100% 100%;
+}
+
+#lpl-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("/public/img/IMG_3062.jpg");
+    background-size: cover;
+    background-position: center;
+}
