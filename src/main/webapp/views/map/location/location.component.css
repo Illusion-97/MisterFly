@@ -1,0 +1,7 @@
+.b:hover .t {
+    display: block;
+}
+
+:host {
+    display: contents;
+}

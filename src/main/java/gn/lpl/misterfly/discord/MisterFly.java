@@ -63,7 +63,7 @@ public class MisterFly extends ListenerAdapter implements GuildManager {
     @GetMapping("gallery")
     public Optional<List<MessageDto>> getGallery() {
         return //Optional.ofNullable(jda.getGuildById(id))
-                jda.getGuilds().stream().skip(1).findFirst()
+                jda.getGuilds().stream()/*.skip(1)*/.findFirst()
                         .flatMap(guild -> guild.getTextChannelsByName(Salon.GALLERY.getName(), false)
                                 .stream().findFirst())
                         .map(textChannel -> ignoreException(() -> textChannel.getIterableHistory().takeAsync(20).get().stream()

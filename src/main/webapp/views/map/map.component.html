@@ -1,3 +1,10 @@
 <div class="w-full h-full p-10">
-    <app-world/>
+    <app-box>
+        <div class="h-full w-full overflow-auto map" #bg>
+            <div [style.scale]="scale"  class="w-[1024px] h-[1024px] origin-top-left bg-carte relative" (mousedown)="isDown = true" (mouseup)="isDown = false" (mouseleave)="isDown = false" (mousemove)="drag(bg,$event)">
+                <app-location [scroll]="scrollPosition" [x]="170" [y]="225" [modalRef]="ref" src="/public/img/ship.png" titre="Titre à rallonge"/>
+                <app-location [scroll]="scrollPosition" [x]="870" [y]="425" [modalRef]="ref" src="/public/img/ship.png" titre="Other Mark"/>
+            </div>
+        </div>
+    </app-box>
 </div>

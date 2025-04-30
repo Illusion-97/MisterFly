@@ -1,0 +1,10 @@
+@if (position === 'top' || position === 'bot') {
+  <div class="w-full flex h-[30px]">
+    <div class="h-full w-[30px] " [style.background-image]="getImage('left')"></div>
+    <div class="h-full grow min-w-0 flex justify-end" [style.background-image]="getImage()"></div>
+    <div class="h-full pt-[4px] w-[30px]" [style.background-image]="getImage('right')">
+    </div>
+  </div>
+} @else {
+  <div class="h-full w-[30px]" [style.background-image]="getImage()"></div>
+}

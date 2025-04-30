@@ -59,3 +59,12 @@
     background-image: url("/public/img/paper.jpg");
     padding: 100px;
 }
+
+@theme {
+    --color-leather-100: #DDD5D3;
+    --color-leather-200: #BAABA6;
+    --color-leather-300: #98827A;
+    --color-leather-400: #75584D;
+    --color-leather-500: #532E21;
+    --color-leather-600: #42251A;
+}
