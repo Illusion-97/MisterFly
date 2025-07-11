@@ -55,7 +55,7 @@
     </div>
 -->
     <div class="h-full w-full relative overflow-hidden">
-        <video autoplay muted loop id="bg">
+        <video autoplay muted loop id="bg" oncanplay="this.play()" onloadedmetadata="this.muted = true">
             <source src="public/output.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
