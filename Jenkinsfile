@@ -19,8 +19,8 @@ pipeline {
         stage('build_image') {
             steps {
                 script {
-                    sshPut remote: remote, from: 'target/MisterFly.jar', into: './misterfly'
-                    sshPut remote: remote, from: 'Dockerfile', into: './misterfly'
+                    sshPut remote: remote, from: 'target/MisterFly.jar', into: './misterfly/'
+                    sshPut remote: remote, from: 'Dockerfile', into: './misterfly/'
                     sshCommand remote: remote, command: "docker build -f ~/misterfly/Dockerfile -t misterfly:latest ~/misterfly"
                     echo 'image build OK '
                 }
