@@ -5,7 +5,7 @@ import {inject} from "@angular/core";
 export const routes: Routes = [
     {
         path: "",
-        loadComponent: () => import("../views/home/home.component").then(m => m.HomeComponent)
+        loadComponent: () => import("../views/land/land.component").then(m => m.LandComponent)
     },
     {
         path: "contact",

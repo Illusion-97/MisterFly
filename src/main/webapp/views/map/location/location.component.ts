@@ -1,6 +1,6 @@
 import {Component, inject, Input} from '@angular/core';
 import {ModalRef, ModalService} from "../../../app/services/modal.service";
-import {BehaviorSubject, Observable} from "rxjs";
+import {BehaviorSubject} from "rxjs";
 
 @Component({
   selector: 'app-location',
@@ -11,7 +11,7 @@ import {BehaviorSubject, Observable} from "rxjs";
 export class LocationComponent {
   @Input({required: true}) modalRef!: ModalRef
   @Input({required: true}) scroll!: BehaviorSubject<ScrollToOptions>
-  @Input({required: true}) src!: string
+  @Input({required: true}) icon!: number
   @Input({required: true}) titre!: string
   @Input() x: number = 0
   @Input() y: number = 0

@@ -1,0 +1,4 @@
+.snap-mandatory section {
+    scroll-snap-align: start;
+    height: 100%;
+}

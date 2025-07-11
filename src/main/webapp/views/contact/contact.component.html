@@ -1,5 +1,5 @@
 <div class="min-h-full flex justify-center items-center bg-table bg-cover dark:text-black">
-    <div class="contact flex flex-col class justify-center gap-y-6 items-center text-5xl">
+<!--    <div class="contact flex flex-col class justify-center gap-y-6 items-center text-5xl">
         <p class="font-rosemary">Adresse</p>
         <p class="font-treasure text-center">3 Rue des Serruriers 06300 Nice</p>
         <p class="font-rosemary">Mail</p>
@@ -26,6 +26,26 @@
                 Discord
             </a>
 
+        </div>
+    </div>-->
+    <div class="contact flex flex-col">
+        <div>
+            <div class="relative w-full mt-4 rounded-md border h-10 p-1 bg-black/50">
+                <div class="relative w-full h-full flex items-center">
+                    <div (click)="selected=!selected" class="w-full flex justify-center text-gray-400 cursor-pointer">
+                        <button>Renseignements</button>
+                    </div>
+                    <div (click)="selected=!selected" class="w-full flex justify-center text-gray-400 cursor-pointer">
+                        <button>Organisation</button>
+                    </div>
+                </div>
+
+
+                <span [ngClass]="{ 'left-1/2 -ml-1 bg-leather-600 text-white':!selected, 'bg-white text-leather-600 left-1 font-semibold':selected }"
+                      class="shadow flex items-center justify-center w-1/2 rounded h-[1.88rem] transition-all duration-150 ease-linear top-[4px] absolute">
+        {{formType}}
+    </span>
+            </div>
         </div>
     </div>
 </div>
